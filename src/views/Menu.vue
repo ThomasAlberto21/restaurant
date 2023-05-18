@@ -1,12 +1,12 @@
 <template>
-  <div class="home container">
-    <h1>Home</h1>
+  <div class="menu container">
+    <h1>Menu</h1>
   </div>
 </template>
 
 <script>
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
-  name: 'Home',
+  name: 'Menu',
 };
 </script>

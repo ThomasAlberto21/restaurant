@@ -1,24 +1,29 @@
 <template>
-  <nav class="navbar bg-success navbar-expand-lg bg-body-tertiary shadow-sm">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success">
     <div class="container">
-      <span class="navbar-brand fw-bold text-light">Restaurant</span>
-
+      <a class="navbar-brand text-white fw-bold">Restaurant</a>
       <button
-        class="navbar-toggler bg-light"
+        class="navbar-toggler bg-white"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ms-auto text-start gap-lg-3">
-          <a class="nav-link fw-semibold text-light" href="#">Home</a>
-          <a class="nav-link fw-semibold text-light" href="#">Menu</a>
-        </div>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav text-start">
+          <li class="nav-item">
+            <router-link class="text-white nav-link" to="/">Home</router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="text-white nav-link" to="/menu"
+              >Menu</router-link
+            >
+          </li>
+        </ul>
       </div>
     </div>
   </nav>

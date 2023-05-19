@@ -9,7 +9,7 @@
     </div>
 
     <div class="row mb-5">
-      <div class="col-lg-6">
+      <div class="col-lg-7">
         <img
           :src="'../assets/menus/' + menus.gambar"
           class="card-img-top rounded-4 img-fluid h-100 shadow"
@@ -17,11 +17,13 @@
         />
       </div>
 
-      <div class="col-lg-6 mt-lg-0 mt-5">
+      <div class="col-lg-5 mt-lg-0 mt-5">
         <h1 class="fw-bold">{{ menus.nama }}</h1>
         <hr />
         <p>Description : {{ menus.desc }}</p>
-        <p>Price : <strong> Rp.{{ menus.harga }}</strong></p>
+        <p>
+          Price : <strong> Rp.{{ menus.harga }}</strong>
+        </p>
         <form>
           <div class="form-group">
             <label for="quantity">Quantity</label>
@@ -33,11 +35,11 @@
             />
           </div>
           <div class="form-group">
-            <label for="quantity">Description</label>
+            <label for="description">Description</label>
             <textarea
+              rows="6"
               type="text"
               name="description"
-              rows="6"
               class="form-control mt-2"
               placeholder="For example: Spicy, Very Spicy etc..."
             />

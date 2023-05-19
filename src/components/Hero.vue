@@ -1,6 +1,6 @@
 <template>
   <!-- Desktop -->
-  <section class="d-lg-block d-none mt-5">
+  <section class="d-lg-block d-none my-5">
     <div class="d-flex justify-content-center align-items-center">
       <div class="left col-6">
         <figcaption class="blockquote-footer text-success fw-semibold">
@@ -31,7 +31,7 @@
 
   <!-- Tablet And Mobile -->
   <section class="d-lg-none d-block">
-    <div class="justify-content-center align-items-center mt-5">
+    <div class="justify-content-center align-items-center my-5">
       <div class="right">
         <img src="../assets/HeroVectors.png" alt="hero_img" class="w-100" />
       </div>

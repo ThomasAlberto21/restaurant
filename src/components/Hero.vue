@@ -3,7 +3,7 @@
   <section class="d-lg-block d-none mt-5">
     <div class="d-flex justify-content-center align-items-center">
       <div class="left col-6">
-        <figcaption class="blockquote-footer text-success">
+        <figcaption class="blockquote-footer text-success fw-semibold">
           <cite title="Source Title">Fresh And Tasty</cite>
         </figcaption>
         <h1 class="fw-bold display-2">
@@ -36,7 +36,7 @@
         <img src="../assets/HeroVectors.png" alt="hero_img" class="w-100" />
       </div>
       <div class="left mt-5 text-center">
-        <figcaption class="blockquote-footer text-success">
+        <figcaption class="blockquote-footer text-success fw-semibold">
           <cite title="Source Title">Fresh And Tasty</cite>
         </figcaption>
         <h1 class="fw-bold display-2">

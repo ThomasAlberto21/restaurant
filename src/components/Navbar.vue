@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="text-white nav-link fw-semibold" to="/"
+            <router-link to="/" class="text-white nav-link fw-semibold"
               >Home</router-link
             >
           </li>

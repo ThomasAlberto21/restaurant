@@ -15,7 +15,7 @@
           Just confirm your order and enjoy our delicious <br />
           fastest delivery
         </h5>
-        <button class="btn btn-success rounded-2 px-4 py-3 mt-2 fw-bold">
+        <button class="btn btn-success rounded-2 px-4 py-2 mt-2 fw-bold">
           Order Now <i class="bi bi-arrow-down"></i>
         </button>
       </div>
@@ -47,7 +47,7 @@
         <h5 class="fw-light">
           Just confirm your order and enjoy our delicious fastest delivery
         </h5>
-        <button class="btn btn-success rounded-2 px-4 py-3 mt-2 fw-bold">
+        <button class="btn btn-success rounded-2 px-4 py-2 mt-2 fw-bold">
           Order Now <i class="bi bi-arrow-down"></i>
         </button>
       </div>

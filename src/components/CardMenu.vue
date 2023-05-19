@@ -1,14 +1,16 @@
 <template>
-  <div class="card" style="width: 18rem">
+  <div class="card">
     <img
       :src="'../assets/menus/' + menu.gambar"
       class="card-img-top"
-      alt="menus"
+      alt="menus_image"
     />
-    <div class="card-body">
-      <h5 class="card-title">{{ menu.nama }}</h5>
-      <p>Rp.{{ menu.harga }}</p>
-      <a href="#" class="btn btn-success">Order Now</a>
+    <div class="card-body mt-2">
+      <h5 class="card-title fw-bold">{{ menu.nama }}</h5>
+      <p>Harga Rp. {{ menu.harga }}</p>
+      <a class="btn btn-success py-2 fw-semibold">
+        <i class="bi bi-cart text-white me-2"></i>Order Now</a
+      >
     </div>
   </div>
 </template>

@@ -2,7 +2,7 @@
   <div class="home container">
     <Hero />
 
-    <div class="row my-5">
+    <div class="row mt-5 justify-content-center align-content-center">
       <div class="col">
         <h3>Best <strong>Menu</strong></h3>
       </div>
@@ -10,12 +10,12 @@
         <router-link
           to="/menu"
           class="btn btn-success text-white float-end fw-semibold"
-          ><i class="bi bi-eye"></i> See All Menus</router-link
+          ><i class="bi bi-eye me-1"></i> See All Menus</router-link
         >
       </div>
     </div>
 
-    <div class="row my-5">
+    <div class="row my-5 gap-lg-0 gap-3">
       <div class="col-md-4" v-for="menu in menus" :key="menu.id">
         <CardMenu :menu="menu" />
       </div>

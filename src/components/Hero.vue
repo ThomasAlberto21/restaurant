@@ -15,9 +15,12 @@
           Just confirm your order and enjoy our delicious <br />
           fastest delivery
         </h5>
-        <button class="btn btn-success rounded-2 px-4 py-2 mt-2 fw-bold">
-          Order Now <i class="bi bi-arrow-down"></i>
-        </button>
+        <router-link
+          to="/menu"
+          class="btn btn-success rounded-2 px-4 py-2 mt-4 fw-bold"
+        >
+          Order <i class="bi bi-cart ms-2"></i>
+        </router-link>
       </div>
       <div class="right col-6">
         <img

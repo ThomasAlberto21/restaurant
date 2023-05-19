@@ -6,17 +6,17 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'HomeViews',
     component: HomeVue,
   },
   {
     path: '/menu',
-    name: 'Menu',
+    name: 'MenuViews',
     component: MenuVue,
   },
   {
     path: '/cart',
-    name: 'Cart',
+    name: 'CartViews',
     component: CartVue,
   },
 ];

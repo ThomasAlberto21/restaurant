@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success">
     <div class="container">
-      <a class="navbar-brand text-white fw-bold">Restaurant</a>
+      <a class="navbar-brand text-white fw-bolder">Restaurant</a>
       <button
         class="navbar-toggler bg-white"
         type="button"
@@ -14,14 +14,28 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav text-start">
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link class="text-white nav-link" to="/">Home</router-link>
+            <router-link class="text-white nav-link fw-semibold" to="/"
+              >Home</router-link
+            >
           </li>
           <li class="nav-item">
-            <router-link class="text-white nav-link" to="/menu"
+            <router-link class="text-white nav-link fw-semibold" to="/menu"
               >Menu</router-link
             >
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <router-link class="btn btn-light position-relative" to="/cart">
+              <i class="bi bi-cart text-success"></i>
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-1 bg-danger"
+              >
+                0
+              </span>
+            </router-link>
           </li>
         </ul>
       </div>

@@ -21,14 +21,14 @@
             >
           </li>
           <li class="nav-item">
-            <router-link class="text-white nav-link fw-semibold" to="/menu"
+            <router-link to="/menu" class="text-white nav-link fw-semibold"
               >Menu</router-link
             >
           </li>
         </ul>
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <router-link class="btn btn-light position-relative" to="/cart">
+            <router-link to="/cart" class="btn btn-light position-relative">
               <i class="bi bi-cart text-success"></i>
               <span
                 class="position-absolute top-0 start-100 translate-middle badge rounded-1 bg-danger"

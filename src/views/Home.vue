@@ -2,7 +2,7 @@
   <div class="home container mt-5">
     <Hero />
 
-    <div class="row my-4">
+    <head class="row my-4">
       <div class="col">
         <h3>Best <strong>Menu</strong></h3>
       </div>
@@ -13,7 +13,7 @@
           ><i class="bi bi-eye me-1"></i> See All Menus</router-link
         >
       </div>
-    </div>
+    </head>
 
     <div class="row mb-5 gap-lg-0 gap-md-0 gap-3">
       <div class="col-md-4" v-for="menu in menus" :key="menu.id">

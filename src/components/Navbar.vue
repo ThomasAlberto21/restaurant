@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success">
     <div class="container">
-      <a class="navbar-brand text-white fw-bolder">Traditional Food</a>
+      <a class="navbar-brand text-white fw-bolder">Restaurant</a>
       <button
         class="navbar-toggler bg-white"
         type="button"

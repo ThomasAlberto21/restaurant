@@ -21,7 +21,7 @@
         <h1 class="fw-bold">{{ menus.nama }}</h1>
         <hr />
         <p>Description : {{ menus.desc }}</p>
-        <p>Price <strong> Rp.{{ menus.harga }}</strong></p>
+        <p>Price : <strong> Rp.{{ menus.harga }}</strong></p>
         <form>
           <div class="form-group">
             <label for="quantity">Quantity</label>

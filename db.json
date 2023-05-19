@@ -6,7 +6,8 @@
       "nama": "Sate Ayam",
       "harga": 16000,
       "is_ready": true,
-      "gambar": "sate-ayam.jpg"
+      "gambar": "sate-ayam.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "nama": "Nasi Goreng Telur",
       "harga": 14000,
       "is_ready": true,
-      "gambar": "nasi-goreng-telor.jpg"
+      "gambar": "nasi-goreng-telor.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "nama": "Nasi Rames",
       "harga": 12000,
       "is_ready": true,
-      "gambar": "nasi-rames.jpg"
+      "gambar": "nasi-rames.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     }
   ],
   "menus": [
@@ -32,7 +35,8 @@
       "nama": "Sate Ayam",
       "harga": 16000,
       "is_ready": true,
-      "gambar": "sate-ayam.jpg"
+      "gambar": "sate-ayam.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 2,
@@ -40,7 +44,8 @@
       "nama": "Nasi Goreng Telur",
       "harga": 14000,
       "is_ready": true,
-      "gambar": "nasi-goreng-telor.jpg"
+      "gambar": "nasi-goreng-telor.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 3,
@@ -48,7 +53,8 @@
       "nama": "Nasi Rames",
       "harga": 12000,
       "is_ready": true,
-      "gambar": "nasi-rames.jpg"
+      "gambar": "nasi-rames.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 4,
@@ -56,7 +62,8 @@
       "nama": "Mie Ayam Bakso",
       "harga": 14000,
       "is_ready": true,
-      "gambar": "mie-ayam-bakso.jpg"
+      "gambar": "mie-ayam-bakso.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 5,
@@ -64,7 +71,8 @@
       "nama": "Mie Goreng",
       "harga": 13000,
       "is_ready": true,
-      "gambar": "mie-goreng.jpg"
+      "gambar": "mie-goreng.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 6,
@@ -72,7 +80,8 @@
       "nama": "Bakso",
       "harga": 10000,
       "is_ready": true,
-      "gambar": "bakso.jpg"
+      "gambar": "bakso.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 7,
@@ -80,7 +89,8 @@
       "nama": "Pangsit 6 pcs",
       "harga": 5000,
       "is_ready": true,
-      "gambar": "pangsit.jpg"
+      "gambar": "pangsit.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 8,
@@ -88,7 +98,8 @@
       "nama": "Kentang Goreng",
       "harga": 5000,
       "is_ready": true,
-      "gambar": "kentang-goreng.jpg"
+      "gambar": "kentang-goreng.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     },
     {
       "id": 9,
@@ -96,7 +107,8 @@
       "nama": "Lontong Opor Ayam",
       "harga": 18000,
       "is_ready": true,
-      "gambar": "lontong-opor-ayam.jpg"
+      "gambar": "lontong-opor-ayam.jpg",
+      "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     }
   ],
   "carts": [],

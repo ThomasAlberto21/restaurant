@@ -15,8 +15,8 @@
       </div>
     </head>
 
-    <div class="row mb-5 gap-lg-0 gap-md-0 gap-3">
-      <div class="col-md-4" v-for="menu in menus" :key="menu.id">
+    <div class="row mb-5 mt-5">
+      <div class="col-md-4 mb-4" v-for="menu in menus" :key="menu.id">
         <CardMenu :menu="menu" />
       </div>
     </div>

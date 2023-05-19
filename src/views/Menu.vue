@@ -19,14 +19,14 @@
             @keyup="searchFood"
           />
           <div class="input-group-text bg-success text-white" id="search">
-            Search <i class="ms-2 bi bi-search"></i>
+            <i class="bi bi-search"></i>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row mb-5 gap-lg-0 gap-md-0 gap-3">
-      <div class="col-md-4 mb-5" v-for="menu in menus" :key="menu.id">
+    <div class="row mb-5 mt-5">
+      <div class="col-lg-4 col-md-6 mb-4" v-for="menu in menus" :key="menu.id">
         <CardMenu :menu="menu" />
       </div>
     </div>

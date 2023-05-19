@@ -10,11 +10,13 @@
       <div class="col">
         <div class="input-group">
           <input
+            v-model="search"
             type="text"
             class="form-control"
             placeholder="Search Foods..."
             aria-label="Search Foods..."
             aria-describedby="basic-addon2"
+            @keyup="searchFood"
           />
           <span class="input-group-text bg-success text-white" id="search"
             ><i class="bi bi-search"></i
@@ -44,12 +46,19 @@ export default {
   data() {
     return {
       menus: [],
+      search: '',
     };
   },
 
   methods: {
     setMenus(data) {
       this.menus = data;
+    },
+
+    searchFood() {
+      Axios.get('http://localhost:3000/menus?q=' + this.search)
+        .then((response) => this.setMenus(response.data))
+        .catch((error) => console.log(error));
     },
   },
 

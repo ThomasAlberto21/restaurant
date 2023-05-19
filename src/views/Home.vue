@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="row mt-5">
+    <div class="row my-5">
       <div class="col-md-4" v-for="menu in menus" :key="menu.id">
         <CardMenu :menu="menu" />
       </div>

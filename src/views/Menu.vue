@@ -6,7 +6,7 @@
       </div>
     </div>
 
-    <div class="row my-4">
+    <div class="row">
       <div class="col">
         <div class="input-group">
           <input

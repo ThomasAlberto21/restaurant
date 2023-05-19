@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card shadow-sm">
     <img
       :src="'../assets/menus/' + menu.gambar"
       class="card-img-top"
@@ -7,8 +7,10 @@
     />
     <div class="card-body mt-2">
       <h5 class="card-title fw-bold">{{ menu.nama }}</h5>
-      <p>Harga Rp. {{ menu.harga }}</p>
-      <a class="btn btn-success py-2 fw-semibold">
+      <p class="card-price fw-normal">
+        Harga Rp. <strong>{{ menu.harga }}</strong>
+      </p>
+      <a class="btn btn-success fw-semibold py-2 mt-3">
         <i class="bi bi-cart text-white me-2"></i>Order Now</a
       >
     </div>

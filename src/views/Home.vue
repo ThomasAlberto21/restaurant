@@ -2,7 +2,7 @@
   <div class="home container">
     <Hero />
 
-    <div class="row mt-5 justify-content-center align-content-center">
+    <div class="row mt-5">
       <div class="col">
         <h3>Best <strong>Menu</strong></h3>
       </div>

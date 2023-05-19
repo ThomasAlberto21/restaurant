@@ -15,8 +15,8 @@
         :to="'/menu/' + menu.id"
         class="btn btn-success fw-semibold py-2 mt-3"
       >
-        <i class="bi bi-cart text-white me-2"></i>Order Now</router-link
-      >
+        <i class="bi bi-cart text-white me-2"></i>Order Now
+      </router-link>
     </div>
   </div>
 </template>

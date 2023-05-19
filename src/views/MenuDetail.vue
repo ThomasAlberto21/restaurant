@@ -17,8 +17,9 @@
         />
       </div>
       <div class="col-md-6">
-        <h1 class="text-black">{{ menus.nama }}</h1>
-        <p class="card-price fw-normal">
+        <h1 class="fw-bold">{{ menus.nama }}</h1>
+        <hr />
+        <p class="fw-normal">
           Harga <strong> Rp.{{ menus.harga }}</strong>
         </p>
       </div>

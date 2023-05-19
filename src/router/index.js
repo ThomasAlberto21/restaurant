@@ -1,7 +1,7 @@
 import HomeVue from '@/views/Home.vue';
 import MenuVue from '@/views/Menu.vue';
 import CartVue from '@/views/Cart.vue';
-import FoodDetailVue from '@/views/FoodDetail.vue';
+import MenuDetailVue from '@/views/MenuDetail.vue';
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 const routes = [
@@ -17,8 +17,8 @@ const routes = [
   },
   {
     path: '/menu/:id',
-    name: 'FoodDetailViews',
-    component: FoodDetailVue,
+    name: 'MenuDetailViews',
+    component: MenuDetailVue,
   },
   {
     path: '/cart',

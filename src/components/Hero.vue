@@ -57,6 +57,6 @@
 
 <script>
 export default {
-  name: 'HeroBanner',
+  name: 'HeroComponent',
 };
 </script>

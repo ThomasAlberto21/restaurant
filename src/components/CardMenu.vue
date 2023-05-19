@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: 'CardMenu',
+  name: 'CardMenuComponent',
   props: ['menu'],
 };
 </script>

@@ -9,7 +9,7 @@
     <div class="card-body mt-2">
       <h5 class="card-title fw-bold">{{ menu.nama }}</h5>
       <p class="card-price fw-normal">
-        Harga Rp. <strong>{{ menu.harga }}</strong>
+        Harga <strong> Rp.{{ menu.harga }}</strong>
       </p>
       <router-link
         :to="'/menu/' + menu.id"

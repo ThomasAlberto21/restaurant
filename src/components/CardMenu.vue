@@ -11,8 +11,11 @@
       <p class="card-price fw-normal">
         Harga Rp. <strong>{{ menu.harga }}</strong>
       </p>
-      <a class="btn btn-success fw-semibold py-2 mt-3">
-        <i class="bi bi-cart text-white me-2"></i>Order Now</a
+      <router-link
+        :to="'/menu/' + menu.id"
+        class="btn btn-success fw-semibold py-2 mt-3"
+      >
+        <i class="bi bi-cart text-white me-2"></i>Order Now</router-link
       >
     </div>
   </div>

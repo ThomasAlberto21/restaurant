@@ -18,9 +18,9 @@
             aria-describedby="basic-addon2"
             @keyup="searchFood"
           />
-          <span class="input-group-text bg-success text-white" id="search"
-            ><i class="bi bi-search"></i
-          ></span>
+          <div class="input-group-text bg-success text-white" id="search">
+            Search <i class="ms-2 bi bi-search"></i>
+          </div>
         </div>
       </div>
     </div>

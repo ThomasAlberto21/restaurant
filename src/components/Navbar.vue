@@ -30,7 +30,7 @@
               <i class="bi bi-cart text-success"></i>
               <span
                 class="position-absolute top-0 start-100 translate-middle badge rounded-1 bg-danger"
-                >{{ updateCarts ? updateCarts : quantity.length }}
+                >{{ updateCarts ? updateCarts.length : quantity.length }}
               </span>
             </router-link>
           </li>

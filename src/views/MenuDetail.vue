@@ -30,7 +30,7 @@
               name="quantity"
               class="form-control mt-2"
               placeholder="Enter the quantity.."
-              v-model="carts.quantity"
+              v-model="orders.quantity"
             />
           </div>
           <div class="form-group mt-2">
@@ -41,7 +41,7 @@
               name="description"
               class="form-control mt-2"
               placeholder="For example: Spicy, Very Spicy etc..."
-              v-model="carts.description"
+              v-model="orders.description"
             />
           </div>
           <button
@@ -67,7 +67,7 @@ export default {
   data() {
     return {
       menus: {},
-      carts: {},
+      orders: {},
     };
   },
 
@@ -78,9 +78,9 @@ export default {
 
     submitOrder() {
       const toast = useToast();
-      if (this.carts.quantity) {
-        this.carts.menus = this.menus;
-        Axios.post('http://localhost:3000/carts', this.carts)
+      if (this.orders.quantity) {
+        this.orders.menus = this.menus;
+        Axios.post('http://localhost:3000/orders', this.orders)
           .then(() => {
             this.$router.push({ path: '/cart' });
             toast.success('Success Add To Cart', {

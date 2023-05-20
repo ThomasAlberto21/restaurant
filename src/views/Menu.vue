@@ -9,7 +9,7 @@
     </div>
     <div class="row mt-5 mb-3">
       <div class="col">
-        <h1>List <strong>Foods</strong></h1>
+        <h1>List <strong>Menu</strong></h1>
       </div>
     </div>
 

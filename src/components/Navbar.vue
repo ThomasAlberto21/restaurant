@@ -30,8 +30,7 @@
               <i class="bi bi-cart text-success"></i>
               <span
                 class="position-absolute top-0 start-100 translate-middle badge rounded-1 bg-danger"
-              >
-                0
+                >{{ updateCarts ? updateCarts : quantity.length }}
               </span>
             </router-link>
           </li>
@@ -42,7 +41,28 @@
 </template>
 
 <script>
+import Axios from 'axios';
+
 export default {
   name: 'NavbarComponent',
+  props: ['updateCarts'],
+
+  data() {
+    return {
+      quantity: [],
+    };
+  },
+
+  methods: {
+    setQuantity(data) {
+      this.quantity = data;
+    },
+  },
+
+  mounted() {
+    Axios.get('http://localhost:3000/carts')
+      .then((response) => this.setQuantity(response.data))
+      .catch((error) => console.log(error));
+  },
 };
 </script>

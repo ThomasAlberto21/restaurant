@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar :updateCarts="carts" />
     <router-view />
     <Footer />
   </div>

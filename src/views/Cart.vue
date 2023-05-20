@@ -88,7 +88,7 @@ export default {
     },
 
     deleteCart(id) {
-      Axios.delete('http://localhost:3000/orders/' + id)
+      Axios.delete('http://localhost:3000/carts/' + id)
         .then(() => {
           const toast = useToast();
           toast.error('Success Delete Carts', {
@@ -105,7 +105,7 @@ export default {
           });
 
           // Update Data
-          Axios.get('http://localhost:3000/orders/')
+          Axios.get('http://localhost:3000/carts')
             .then((response) => this.setCarts(response.data))
             .catch((error) => console.log(error));
         })
@@ -116,7 +116,7 @@ export default {
   },
 
   mounted() {
-    Axios.get('http://localhost:3000/orders/')
+    Axios.get('http://localhost:3000/carts/')
       .then((response) => this.setCarts(response.data))
       .catch((error) => console.log(error));
   },

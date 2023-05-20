@@ -80,7 +80,7 @@ export default {
       const toast = useToast();
       if (this.orders.quantity) {
         this.orders.menus = this.menus;
-        Axios.post('http://localhost:3000/orders', this.orders)
+        Axios.post('http://localhost:3000/carts', this.orders)
           .then(() => {
             this.$router.push({ path: '/cart' });
             toast.success('Success Add To Cart', {

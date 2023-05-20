@@ -65,8 +65,8 @@ export default {
 
   data() {
     return {
-      menus: [],
-      carts: [],
+      menus: {},
+      carts: {},
     };
   },
 
@@ -74,8 +74,16 @@ export default {
     setMenus(data) {
       this.menus = data;
     },
+
     submitOrder() {
-      console.log(this.carts);
+      this.carts.menus = this.menus;
+      Axios.post('http://localhost:3000/carts', this.carts)
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
   },
 

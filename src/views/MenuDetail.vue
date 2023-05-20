@@ -12,7 +12,7 @@
       <div class="col-lg-7">
         <img
           :src="'../assets/menus/' + menus.gambar"
-          class="card-img-top rounded-4 img-fluid h-100 shadow"
+          class="card-img-top rounded-4 h-100 shadow"
           alt="menus_image"
         />
       </div>

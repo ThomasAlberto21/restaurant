@@ -1,5 +1,5 @@
 <template>
-  <div class="card shadow rounded-4 border-0">
+  <div class="card shadow rounded-4 border-0 mb-3">
     <img
       :src="'../assets/menus/' + menu.gambar"
       class="card-img-top rounded-4"

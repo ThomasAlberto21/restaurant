@@ -38,10 +38,10 @@
             <textarea
               rows="6"
               type="text"
-              name="description"
+              name="descriptionOrder"
               class="form-control mt-2"
               placeholder="For example: Spicy, Very Spicy etc..."
-              v-model="orders.description"
+              v-model="orders.descriptionOrder"
             />
           </div>
           <button

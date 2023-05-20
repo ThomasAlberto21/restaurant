@@ -82,6 +82,7 @@ export default {
         this.carts.menus = this.menus;
         Axios.post('http://localhost:3000/carts', this.carts)
           .then(() => {
+            this.$router.push({ path: '/cart' });
             toast.success('Success Add To Cart', {
               position: 'top-center',
               timeout: 3000,

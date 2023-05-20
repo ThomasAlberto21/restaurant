@@ -111,21 +111,6 @@
       "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
     }
   ],
-  "carts": [
-    {
-      "quantity": 1,
-      "description": "sa",
-      "menus": {
-        "id": 1,
-        "kode": "K-01",
-        "nama": "Sate Ayam",
-        "harga": 16000,
-        "is_ready": true,
-        "gambar": "sate-ayam.jpg",
-        "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
-      },
-      "id": 1
-    }
-  ],
+  "carts": [],
   "orders": []
 }

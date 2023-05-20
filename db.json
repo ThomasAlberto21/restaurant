@@ -125,6 +125,34 @@
         "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
       },
       "id": 1
+    },
+    {
+      "quantity": 1,
+      "descriptionOrder": "adsa",
+      "menus": {
+        "id": 2,
+        "kode": "K-02",
+        "nama": "Nasi Goreng Telur",
+        "harga": 14000,
+        "is_ready": true,
+        "gambar": "nasi-goreng-telor.jpg",
+        "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
+      },
+      "id": 2
+    },
+    {
+      "quantity": 1,
+      "descriptionOrder": "asda",
+      "menus": {
+        "id": 6,
+        "kode": "K-06",
+        "nama": "Bakso",
+        "harga": 10000,
+        "is_ready": true,
+        "gambar": "bakso.jpg",
+        "desc": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos beatae neque ipsam, atque dolor temporibus ab incidunt assumenda sequi maxime praesentium eveniet illo fugiat voluptatem, repudiandae accusantium cum. Laboriosam, debitis."
+      },
+      "id": 3
     }
   ],
   "carts": []

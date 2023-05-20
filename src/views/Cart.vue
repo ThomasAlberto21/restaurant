@@ -19,9 +19,10 @@
                 <th scope="col">No</th>
                 <th scope="col">Picture</th>
                 <th scope="col">Name Food</th>
+                <th scope="col">Description Order</th>
                 <th scope="col">Quantity</th>
                 <th scope="col">Price</th>
-                <th scope="col">Description Order</th>
+
                 <th scope="col">Total Price</th>
                 <th scope="col">Delete</th>
               </tr>
@@ -37,12 +38,25 @@
                   />
                 </td>
                 <td>{{ cart.menus.nama }}</td>
-                <td>{{ cart.quantity }}</td>
-                <td>Rp. {{ cart.menus.harga }}</td>
                 <td>
                   {{ cart.descriptionOrder ? cart.descriptionOrder : '-' }}
                 </td>
+                <td>{{ cart.quantity }}</td>
+                <td>Rp. {{ cart.menus.harga }}</td>
                 <td>Rp. {{ cart.menus.harga * cart.quantity }}</td>
+                <td>
+                  <button class="btn btn-danger text-white">
+                    <i class="bi bi-trash3"></i>
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="6" align="right">Total Price :</td>
+                <td>
+                  <strong>Rp.{{ totalPrice }}</strong>
+                </td>
+                <td></td>
               </tr>
             </tbody>
           </table>
@@ -74,6 +88,14 @@ export default {
     Axios.get('http://localhost:3000/orders/')
       .then((response) => this.setCarts(response.data))
       .catch((error) => console.log(error));
+  },
+
+  computed: {
+    totalPrice() {
+      return this.carts.reduce(function (item, data) {
+        return item + data.menus.harga * data.quantity;
+      }, 0);
+    },
   },
 };
 </script>

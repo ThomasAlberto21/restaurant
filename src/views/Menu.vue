@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <Navbar :updateCarts="carts" />
+    <Navbar />
 
     <div class="container">
       <div class="row my-5">

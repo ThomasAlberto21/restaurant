@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <Navbar :updateCarts="carts" />
+    <Navbar />
     <div class="container mt-5">
       <Hero />
 

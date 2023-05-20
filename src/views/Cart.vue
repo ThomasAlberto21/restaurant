@@ -186,7 +186,7 @@ export default {
             closeButton: 'button',
           });
 
-          // Update Data
+          // Update Data Jika sudah hapus carts nya
           Axios.get('http://localhost:3000/carts')
             .then((response) => this.setCarts(response.data))
             .catch((error) => console.log(error));

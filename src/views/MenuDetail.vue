@@ -20,31 +20,34 @@
       <div class="col-lg-5 mt-lg-0 mt-5">
         <h1 class="fw-bold">{{ menus.nama }}</h1>
         <hr />
-        <p>Description : {{ menus.desc }}</p>
-        <p>
-          Price : <strong> Rp.{{ menus.harga }}</strong>
-        </p>
-        <form>
+        <p><strong>Description Foods</strong> : {{ menus.desc }}</p>
+        <p><strong>Price</strong> : Rp.{{ menus.harga }}</p>
+        <form v-on:submit.prevent>
           <div class="form-group">
-            <label for="quantity">Quantity</label>
+            <label for="quantity"><strong>Quantity</strong></label>
             <input
               type="number"
               name="quantity"
               class="form-control mt-2"
               placeholder="Enter the quantity.."
+              v-model="carts.quantity"
             />
           </div>
-          <div class="form-group">
-            <label for="description">Description</label>
+          <div class="form-group mt-2">
+            <label for="description"><strong>Description</strong></label>
             <textarea
               rows="6"
               type="text"
               name="description"
               class="form-control mt-2"
               placeholder="For example: Spicy, Very Spicy etc..."
+              v-model="carts.description"
             />
           </div>
-          <button class="btn btn-success rounded-2 text-white mt-3 w-100 py-3">
+          <button
+            class="btn btn-success rounded-2 text-white mt-3 w-100 py-3"
+            @click="submitOrder"
+          >
             <i class="bi bi-cart text-white me-2"></i>
             <span class="fw-semibold">Order</span>
           </button>
@@ -63,12 +66,16 @@ export default {
   data() {
     return {
       menus: [],
+      carts: [],
     };
   },
 
   methods: {
     setMenus(data) {
       this.menus = data;
+    },
+    submitOrder() {
+      console.log(this.carts);
     },
   },
 

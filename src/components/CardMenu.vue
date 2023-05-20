@@ -2,7 +2,7 @@
   <div class="card shadow rounded-4 border-0">
     <img
       :src="'../assets/menus/' + menu.gambar"
-      class="card-img-top"
+      class="card-img-top rounded-4"
       alt="menus_image"
     />
 

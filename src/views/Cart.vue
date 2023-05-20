@@ -45,7 +45,10 @@
                 <td>Rp. {{ cart.menus.harga }}</td>
                 <td>Rp. {{ cart.menus.harga * cart.quantity }}</td>
                 <td>
-                  <button class="btn btn-danger text-white">
+                  <button
+                    class="btn btn-danger text-white"
+                    @click="deleteCart(cart.id)"
+                  >
                     <i class="bi bi-trash3"></i>
                   </button>
                 </td>
@@ -68,6 +71,7 @@
 
 <script>
 import Axios from 'axios';
+import { useToast } from 'vue-toastification';
 
 export default {
   name: 'CartViews',
@@ -81,6 +85,33 @@ export default {
   methods: {
     setCarts(data) {
       this.carts = data;
+    },
+
+    deleteCart(id) {
+      Axios.delete('http://localhost:3000/orders/' + id)
+        .then(() => {
+          const toast = useToast();
+          toast.error('Success Delete Carts', {
+            position: 'top-center',
+            timeout: 3000,
+            closeOnClick: true,
+            pauseOnFocusLoss: true,
+            pauseOnHover: true,
+            draggable: true,
+            draggablePercent: 0.6,
+            showCloseButtonOnHover: false,
+            hideProgressBar: true,
+            closeButton: 'button',
+          });
+
+          // Update Data
+          Axios.get('http://localhost:3000/orders/')
+            .then((response) => this.setCarts(response.data))
+            .catch((error) => console.log(error));
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
   },
 

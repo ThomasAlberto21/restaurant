@@ -1,5 +1,12 @@
 <template>
   <div class="menu container">
+    <div class="row my-5">
+      <div class="col">
+        <router-link to="/" type="button" class="btn btn-success">
+          <i class="bi bi-arrow-left"></i> Back
+        </router-link>
+      </div>
+    </div>
     <div class="row mt-5 mb-3">
       <div class="col">
         <h1>List <strong>Foods</strong></h1>

@@ -11,7 +11,7 @@
           <br />
           <span class="text-success">Fresh Food</span>
         </h1>
-        <h5 class="fw-light">
+        <h5 class="fw-normal">
           Just confirm your order and enjoy our delicious <br />
           fastest delivery
         </h5>

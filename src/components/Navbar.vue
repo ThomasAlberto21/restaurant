@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-success">
     <div class="container">
-      <a class="navbar-brand text-white fw-bolder">Restaurant</a>
+      <a class="navbar-brand text-white fw-semibold">Restaurant Foods</a>
       <button
         class="navbar-toggler bg-white"
         type="button"
@@ -14,19 +14,17 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav ms-auto gap-2">
           <li class="nav-item">
             <router-link to="/" class="text-white nav-link fw-semibold"
               >Home</router-link
             >
           </li>
-          <li class="nav-item">
+          <li class="nav-item link-opacity-10-hover">
             <router-link to="/menu" class="text-white nav-link fw-semibold"
               >Menu</router-link
             >
           </li>
-        </ul>
-        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <router-link to="/cart" class="btn btn-light position-relative">
               <i class="bi bi-cart text-success"></i>

@@ -59,6 +59,7 @@
 
 <script>
 import Axios from 'axios';
+import { useToast } from 'vue-toastification';
 
 export default {
   name: 'MenuDetailViews',
@@ -76,14 +77,45 @@ export default {
     },
 
     submitOrder() {
-      this.carts.menus = this.menus;
-      Axios.post('http://localhost:3000/carts', this.carts)
-        .then((response) => {
-          console.log(response);
-        })
-        .catch((error) => {
-          console.log(error);
+      const toast = useToast();
+      if (this.carts.quantity) {
+        this.carts.menus = this.menus;
+        Axios.post('http://localhost:3000/carts', this.carts)
+          .then(() => {
+            toast.success('Success Add To Cart', {
+              position: 'top-center',
+              timeout: 3000,
+              closeOnClick: true,
+              pauseOnFocusLoss: true,
+              pauseOnHover: true,
+              draggable: true,
+              draggablePercent: 0.6,
+              showCloseButtonOnHover: false,
+              hideProgressBar: true,
+              closeButton: 'button',
+              icon: true,
+              rtl: false,
+            });
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      } else {
+        toast.error('Order Quantity And Description Are Required', {
+          position: 'top-center',
+          timeout: 3000,
+          closeOnClick: true,
+          pauseOnFocusLoss: true,
+          pauseOnHover: true,
+          draggable: true,
+          draggablePercent: 0.6,
+          showCloseButtonOnHover: false,
+          hideProgressBar: true,
+          closeButton: 'button',
+          icon: true,
+          rtl: false,
         });
+      }
     },
   },
 

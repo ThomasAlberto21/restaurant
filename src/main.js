@@ -8,6 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'vue-toastification/dist/index.css';
 
-createApp(App).use(router).mount('#app');
-const app = createApp({});
+createApp(App).use(router).use(router).mount('#app');
+const app = createApp({}).use(router);
 app.use(Toast);
